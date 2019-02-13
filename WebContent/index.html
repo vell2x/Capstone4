@@ -1,0 +1,47 @@
+<!DOCTYPE html>
+<html>
+<head>
+<meta charset="ISO-8859-1">
+<link rel="stylesheet" href="style.css">
+<title>Vell Mart</title>
+</head>
+<body>
+<h1>Welcome to Vell Mart</h1>
+
+<table style="width:100%">
+  <tr>
+    <th>Items</th>
+    <th>Price</th>
+  </tr>
+  <tr>
+    <td id="appleName">Apples</td>
+    <td id="applePrice">1.27</td> 
+    <td><button id="appleButton" onclick="addToCart('Apples', 1.27);">Add</button></td>
+  </tr>
+  <tr>
+    <td id="grapesName">Grapes</td>
+    <td id="grapesPrice">5.29</td> 
+    <td><button id="grapesButton" onclick="addToCart('Grapes', 5.29);">Add</button></td>
+  </tr>
+  <tr>
+    <td id="orangesName">Oranges</td>
+    <td id="orangesPrices">4.36</td> 
+    <td><button id="orangesButton" onclick="addToCart('Oranges', 4.36);">Add</button></td>
+  </tr>
+  <tr>
+    <td id="peachesName">Peaches</td>
+    <td id="peachesPrice">6.56</td> 
+    <td><button id="peachesButton" onclick="addToCart('Peaches', 6.56);">Add</button></td>
+  </tr>
+  <tr>
+    <td id="kaleName">Kale</td>
+    <td id="kalePrice">2.29</td> 
+    <td><button id="kaleButton" onclick="addToCart('Kale', 2.29);">Add</button></td>
+  </tr>
+</table> 
+
+<p><button onclick="printCart();">Checkout</button></p>
+<div id="Cart"></div>
+<script src="script.js"></script>
+</body>
+</html>
